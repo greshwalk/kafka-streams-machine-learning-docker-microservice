@@ -31,9 +31,9 @@ import hex.genmodel.easy.exception.PredictException;
 import hex.genmodel.easy.prediction.BinomialModelPrediction;
 
 /**
- * 
+ *
  * @author Kai Waehner (www.kai-waehner.de)
- * 
+ *
  * End-to-end integration test based on {@link Kafka_Streams_MachineLearning_H2O_GBM_Example}, using an
  * embedded Kafka cluster and a H2O.ai GBM Model.
  *
@@ -44,7 +44,7 @@ public class Kafka_Streams_MachineLearning_H2O_GBM_Example_IntegrationTest {
 
 	@ClassRule
 	public static final EmbeddedSingleNodeKafkaCluster CLUSTER = new EmbeddedSingleNodeKafkaCluster();
- 
+
 	private static final String inputTopic = "AirlineInputTopic";
 	private static final String outputTopic = "AirlineOutputTopic";
 
@@ -195,7 +195,7 @@ public class Kafka_Streams_MachineLearning_H2O_GBM_Example_IntegrationTest {
 		streams.close();
 		assertThat(response).isNotNull();
 		assertThat(response.get(0).value).isEqualTo("Prediction: Is Airline delayed? => YES");
-		
+
 		assertThat(response.get(1).value).isEqualTo("Prediction: Is Airline delayed? => NO");
 	}
 

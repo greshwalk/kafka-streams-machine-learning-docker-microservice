@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.github.megachucky.kafka.streams.machinelearning.test.Kafka_Streams_MachineLearning_H2O_GBM_Example_IntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.518 sec
